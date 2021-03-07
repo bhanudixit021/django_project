@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'crispy_forms',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -120,3 +121,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#version of Bootstrap for crispy_orms from installed apps
+CRISPY_TEMPLATE_PACK='bootstrap4'
+
+
+#login redirection in place (default = 'accounts/profile/')
+LOGIN_REDIRECT_URL = 'blog-home'
+
+LOGIN_URL='login'
